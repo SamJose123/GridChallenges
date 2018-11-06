@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grid Challenge 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script src="main.js"></script>
+    <style>
+          .container {
+            display: grid;
+            grid-column-gap: 20px;
+            grid-row-gap: 50px;
+            grid-template-columns: repeat(5, 1fr);
+
+        }
+
+        .item6 {
+            background-color: plum;
+            /* grid-column: 1 / -1; */
+        }
+
+        .about {
+            display: grid;
+            grid-column-gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+        }
+
+        .peers {
+            display: grid;
+            grid-column-gap: 20px;
+            grid-row-gap: 50px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .coach {
+            background-color: plum;
+            /* grid-column: 1 / -1; */
+        }
+
+        .g-man {
+            float: left;
+        }
+
+        .text {
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item item1">Link</div>
+        <div class="item item2">Link</div>
+        <div class="item item3">Link</div>
+        <div class="item item4">Link</div>
+        <div class="item item5">Link</div>
+    </div>
+<br>
+    <div class="about">
+        <div class="item item6"><p>Hi, I'm Samantha Joseph. 
+            Currently doing a coding course at Life Choice-Code Space.
+        </p></div>
+        <div class="item item6"><img src="images/sam.jpg.jpg" alt="" width="300px"></div>
+    </div>
+<br>
+    <div class="peers">
+            <div class="item item7"><img src="images/adam.jpg.jpg" alt="" width="200px"></div>
+            <div class="item item8"><img src="images/nuhaa.jpg.jpg" alt="" width="250px"></div>
+            <div class="item item9"><img src="images/jayson.jpg.jpg" alt="" width="200px"></div>
+
+    </div>
+<br>
+    <div class="coach">
+        <div class="item item10"><img src="images/garth.jpg.jpg" alt="" width="200px" class="g-man">
+        <p class="text">This is Garth, my code coach.</p>
+    </div>
+    </div>
+    
+</body>
+</html>
